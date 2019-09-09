@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Vue JS 6</title>
+    <title>Vue JS 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="componentes/padre.js"></script>
+    <script src="componentes/hijo.js"></script>
 </head>
 <body>
     <div id="app" class="container mt-5">
-        <h1>{{ saludo }}</h1>
-        <button @click="saludo = 'saludo cambiado'">Cambiar</button>
-        <button @click="destruir()">Destruir</button>
-    </div>
+        <padre> </padre>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="06.js"></script>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+        })
+    </script>
 </body>
 </html>
